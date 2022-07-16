@@ -78,6 +78,7 @@ body {
   letter-spacing: 0.06em;
   color: var(--minor-text-color);
   background-color: var(--accent-color);
+  cursor: pointer;
 }
 /* Преимущества */
 .benefits-title {
