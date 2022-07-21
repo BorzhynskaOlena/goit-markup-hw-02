@@ -3,9 +3,16 @@
   --secondary-text-color: #757575;
   --minor-text-color: #ffffff;
   --accent-color: #2196f3;
+  --secondary-accent-color: #188ce8;
+  --main-background-color: #ffffff;
+  --secondary-background-color: #2f303a;
+  --background-btn-color: #f5f4fa;
+  --logo-header-color: #000000;
 }
 body {
   font-family: "Roboto", sans-serif;
+  color: var(--primary-text-color);
+  background-color: var(--main-background-color);
 }
 .list {
   list-style: none;
@@ -20,21 +27,19 @@ body {
 .logo {
   font-family: "Raleway", sans-serif;
   font-style: normal;
-  font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--accent-color);
 }
 .logo-header {
-  color: #000000;
+  color: var(--logo-header-color);
 }
 .header-nav-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--primary-text-color);
 }
 .header-nav-link:hover,
 .header-nav-link:focus {
@@ -68,7 +73,7 @@ body {
   color: var(--minor-text-color);
 }
 .hero-btn {
-  font-family: "Roboto", sans-serif;
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -82,10 +87,11 @@ body {
 }
 .hero-btn:hover,
 .hero-btn:focus {
-  background-color: #188ce8;
+  background-color: var(--secondary-accent-color);
 }
 /* Преимущества */
-.benefits-title {
+.benefits-title,
+.portfolio-title {
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -103,7 +109,6 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--primary-text-color);
 }
 .benefits-text {
   font-weight: 400;
@@ -120,7 +125,6 @@ body {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--primary-text-color);
 }
 .team-member {
   font-weight: 500;
@@ -128,10 +132,8 @@ body {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--primary-text-color);
 }
 .team-position {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -141,17 +143,13 @@ body {
 /* Футер */
 .logo-footer {
   font-family: "Raleway", sans-serif;
-  font-style: normal;
-  font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--minor-text-color);
 }
 .footer-text {
-  font-family: "Roboto";
   font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -162,7 +160,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
@@ -175,30 +173,19 @@ body {
 /* Фон для Героя и Футера */
 .hero,
 .footer {
-  background-color: #2f303a;
+  background-color: var(--secondary-background-color);
 }
 
 /* ---------------ПОРТФОЛИО -----------------*/
-.portfolio-title {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
-}
+
 .portfolio-btn {
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--primary-text-color);
-  background-color: #f5f4fa;
+  background-color: var(--background-btn-color);
   cursor: pointer;
 }
 .portfolio-btn:hover,
@@ -211,7 +198,6 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: var(--primary-text-color);
 }
 .example-text {
   font-weight: 400;
